@@ -1,0 +1,43 @@
+from django.urls import path
+from django.conf.urls import include,url             
+from . import views
+
+urlpatterns = [
+    url(r'^index', views.index ,name = "index"),
+    url(r'^About',views.About),
+    url(r'^Aca1',views.Aca1),
+    url(r'^Aca2',views.Aca2),
+    url(r'^Contact',views.Contact),
+    url(r'^login1$',views.login1,name="login1"),
+    url(r'^studenthome',views.studenthome),
+    url(r'^studentlogin',views.studentlogin),
+    url(r'^trackattendance',views.trackattendance),
+    url(r'^trackacademicprogress',views.trackacademicprogress),
+    url(r'^login2$',views.login2,name="login2"),
+    url(r'^answerqueries',views.answerqueries),
+    url(r'^studentleave',views.studentleave),
+    url(r'^leavesubmit',views.leavesubmit),
+    url(r'^facultylogin',views.facultylogin),
+    url(r'^facultyhome',views.facultyhome),
+    url(r'^postanswers',views.postanswers),
+    url(r'^details',views.details),
+    url(r'^queries',views.queries),
+    url(r'^register',views.trackacademicprogress),
+    url(r'^talks',views.trackacademicprogress),
+    url(r'^teaching',views.trackacademicprogress),
+    url(r'^adminmakequery',views.adminmakequery),
+    url(r'^facultymakequery',views.facultymakequery),
+    url(r'^login3$',views.login3,name="login3"),
+    url(r'^adminhome',views.adminhome),
+    url(r'^addevents',views.addevents),
+    url(r'^addfaculty',views.addfaculty),
+    url(r'^addstudent',views.addstudent),
+    url(r'^adminanswerqueries',views.adminanswerqueries,name="adminanswerqueries"),
+    url(r'^adminevents',views.adminevents),
+    url(r'^adminfaculty',views.adminfaculty),
+    url(r'^adminlogin',views.adminlogin),
+    url(r'^adminprofile',views.adminprofile),
+    url(r'^adminqueries',views.adminqueries),
+    url(r'^adminstudents',views.adminstudents),
+
+]
